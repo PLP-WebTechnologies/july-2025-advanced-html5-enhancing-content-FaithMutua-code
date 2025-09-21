@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Form by Faith</title>
+  <meta name="description" content="An enhanced HTML5 form with multimedia, lists, tables, and accessibility features." />
+  <meta name="author" content="Faith" />
+</head>
+
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form</h1>
+    <p>This form demonstrates a variety of HTML5 input fields, multimedia elements, and accessibility features.</p>
+  </header>
+
+  <main>
+    <!-- List Section -->
+    <section>
+      <h2>Instructions</h2>
+      <ul>
+        <li>Fill out all required fields.</li>
+        <li>Fields will be validated using HTML5.</li>
+        <li>Media and tables are included for demonstration purposes.</li>
+      </ul>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Media Content</h2>
+      <figure>
+        <img src="image.jpg" alt="Placeholder image" />
+        <figcaption>An example image included in the form page.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Sample Table</h2>
+      <table border="1" aria-label="Form details summary">
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Required</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Full Name</td>
+            <td>Text</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>Email</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>Tel</td>
+            <td>Optional</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="POST" autocomplete="on" aria-label="Registration form">
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name" />
+
+          <br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required autocomplete="email" />
+
+          <br />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+234-000-0000" pattern="^\+?\d{3}-?\d{3}-?\d{4}$" autocomplete="tel" />
+
+          <br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <br />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Select Gender --</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+
+          <br />
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Login Information</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required placeholder="Username" autocomplete="username" />
+
+          <br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required placeholder="Enter password" autocomplete="new-password" minlength="6" />
+
+          <br />
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" required placeholder="Re-enter password" autocomplete="new-password" minlength="6" />
+
+          <br />
+
+          <label for="referral">Referral Code:</label>
+          <input type="text" id="referral" name="referral" value="WELCOME25" readonly />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>
+            <input type="checkbox" name="subscribe" />
+            Subscribe to newsletter
+          </label>
+
+          <br />
+
+          <p>Preferred Contact Method:</p>
+          <label><input type="radio" name="contact_method" value="email" checked /> Email</label>
+          <label><input type="radio" name="contact_method" value="phone" /> Phone</label>
+        </fieldset>
+
+        <br />
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Faith. All rights reserved.</p>
+  </footer>
+</body>
+</html>
